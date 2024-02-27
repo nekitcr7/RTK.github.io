@@ -1,84 +1,21 @@
-﻿﻿<!DOCTYPE html>
+﻿﻿﻿<!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="..RTK/npm/%40picocss/pico%401/css/pico.min.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Помощь пожилым в освоении компьютеров</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            background-image: url('https://i.imgur.com/grCsq3o.png');
-            background-repeat: no-repeat;
-            background-size: cover;
-            color: #E0E0E0; /* Светло-серый для основного текста */
-        }
-
-
-        #map {
-            height: 400px;
-            width: 100%;
-            margin-top: 20px;
-        }
-
-        .container-fluid, .container {
-            background-color: rgba(0, 0, 0, 0.6); /* Темный фон без прозрачности */
-            padding: 20px; /* Внутренние отступы */
-            margin-bottom: 20px; /* Отступ снизу */
-            /* Убираем закругление */
-        }
-        .main, .grid, section, article {
-        width: 100%; /* Занимает всю доступную ширину */
-        margin: 0; /* Убираем внешние отступы */
-        padding: 20px; /* Добавляем внутренние отступы обратно, если нужно */
-        }
-        footer.container {
-            width: 100%; /* Занимает всю доступную ширину */
-            max-width: 100%; /* Убираем максимальную ширину, если она была задана */
-            padding: 0; /* Убираем внутренние отступы для заполнения от края до края */
-            margin-bottom: 0; /* Убираем нижний отступ, если он был */
-            background-color: rgba(0, 0, 0, 0.6); /* Подтверждаем черный фон */
-        }
-        nav ul li a, footer small a {
-        color: #BBDEFB; /* Светло-голубой для ссылок */
-        }
-
-        nav ul li a:hover, footer small a:hover {
-            color: #FFC107; /* Янтарный для ссылок при наведении */
-        }
-
-        h1, h2, h3, h4, h5, h6 {
-            color: #FFFFFF; /* Белый для заголовков */
-        }
-        .button-style {
-            background-color: #FFC107; /* Янтарный цвет фона */
-            color: #000000; /* Черный цвет текста */
-            border: none; /* Убираем рамку */
-            padding: 10px 20px; /* Отступы */
-            border-radius: 5px; /* Закругление углов */
-            cursor: pointer; /* Курсор-указатель */
-            text-align: center; /* Центрирование текста для ссылок */
-            display: inline-block; /* Для корректного отображения ссылок с padding */
-            text-decoration: none; /* Убираем подчеркивание текста у ссылок */
-            transition: background-color 0.3s ease; /* Эффект при наведении */
-        }
-
-        .button-style:hover {
-            background-color: #E0A106; /* Чуть более темный оттенок при наведении */
-            color: #000000; /* Цвет текста остается неизменным */
-        }
-    </style>
 </head>
 <body>
-<nav class="container-fluid">
-    <ul><li><strong>Компьютер для старичков</strong></li></ul>
-    <ul>
-        <li><a href="#">Главная</a></li>
-        <li><a href="#">Курсы</a></li>
-        <li><a href="#" role="button" class="button-style">Контакты</a></li>
-        <li><a href="javascript:toggleLanguage();" role="button" class="button-style">Latviešu / Русский</a></li>
-    </ul>
-</nav>
+    <nav class="container-fluid">
+        <div style="padding-left: 20px;"><strong>Компьютер для старичков</strong></div>
+        <ul>
+            <li><a href="#">Главная</a></li>
+            <li><a href="#">Курсы</a></li>
+            <li><a href="#" role="button" class="button-style">Контакты</a></li>
+            <li><a href="javascript:toggleLanguage();" role="button" class="button-style">Latviešu / Русский</a></li>
+        </ul>
+    </nav>
 <main class="container">
     <div class="grid">
         <section>
@@ -95,23 +32,20 @@
     </div>
     <div id="map"></div>
 </main>
-<section aria-label="Subscribe example">
-    <div class="container" style="background-color: transparent; box-shadow: none; border-radius: 0;">
-        <article>
-            <hgroup>
-                <h2>Подпишитесь на новости</h2>
-                <h3>Будьте в курсе наших новых курсов и предложений</h3>
-            </hgroup>
-            <form class="grid">
-                <input type="text" id="firstname" name="firstname" placeholder="Ваше имя" aria-label="Ваше имя" required="">
-                <input type="email" id="email" name="email" placeholder="Ваш email" aria-label="Ваш email" required="">
-                <button type="submit" onclick="event.preventDefault()">Подписаться</button>
-            </form>
-        </article>
+<section class="subscription-section">
+    <div class="container">
+        <h2>Подпишитесь на новости</h2>
+        <h3>Будьте в курсе наших новых курсов и предложений</h3>
+        <form class="subscription-form">
+            <input type="text" id="firstname" name="firstname" placeholder="Ваше имя" aria-label="Ваше имя" required>
+            <input type="email" id="email" name="email" placeholder="Ваш email" aria-label="Ваш email" required>
+            <button type="submit" onclick="event.preventDefault()">Подписаться</button>
+        </form>
     </div>
 </section>
 <footer class="container" style="padding: 20px; margin-bottom: 20px; background-color: rgba(0, 0, 0, 0.6);">
     <small><a href="#">Политика конфиденциальности</a> • <a href="#">О нас</a></small>
 </footer>
+
 </body>
 </html>

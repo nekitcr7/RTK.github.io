@@ -17,7 +17,6 @@
     --border: var(--border-color);
     --font-family: var(--font-family-base);
 }
-
 body {
     font-family: 'Arial', sans-serif;
     background-image: url('https://i.imgur.com/grCsq3o.png');
@@ -33,7 +32,6 @@ body {
     align-items: center;
     color: #E0E0E0;
 }
-
 .container-fluid {
     width: 100%; /* Растягиваем на всю ширину */
     background-color: var(--background-color-dark);
@@ -44,7 +42,6 @@ body {
     justify-content: space-between; /* Элементы выравниваются по краям */
     align-items: center;
 }
-
 .container {
     width: 100%;
     max-width: 960px; /* Ограничение максимальной ширины */
@@ -55,7 +52,6 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     
 }
-
 nav ul {
     list-style: none;
     padding: 0;
@@ -65,11 +61,9 @@ nav ul {
     align-items: center;
     width: 30%;
 }
-
 nav ul li {
     margin-right: 20px; /* Уменьшаем правый отступ */
 }
-
 .nav-item:last-child {
     margin-right: 0; /* У последнего элемента нет правого отступа */
 }
@@ -77,7 +71,6 @@ nav ul li a, .button-style, button {
     padding: 5px 10px; /* Уменьшаем padding */
     border-radius: 3px; /* Уменьшаем радиус границы */
 }
-
 nav ul li a {
     color: var(--link-color);
     text-decoration: none;
@@ -85,12 +78,10 @@ nav ul li a {
     border-radius: 5px;
     transition: background-color 0.3s ease;
 }
-
 nav ul li a:hover, nav ul li a:focus {
     background-color: var(--link-hover-color);
     color: #000;
 }
-
 .button-style, button {
     background-color: var(--primary);
     color: #000;
@@ -102,11 +93,9 @@ nav ul li a:hover, nav ul li a:focus {
     display: inline-block;
     transition: background-color 0.3s ease;
 }
-
 .button-style:hover, button:hover {
     background-color: var(--primary-hover);
 }
-
 #map {
     height: 400px;
     width: 100%;
@@ -114,14 +103,12 @@ nav ul li a:hover, nav ul li a:focus {
     margin-top: 20px;
     margin-bottom: 20px;
 }
-
 .subscription-form {
     display: flex;
     flex-direction: column; /* Stack elements vertically on mobile */
     gap: 10px; /* Space between form elements */
     padding: 20px 0; /* Padding on top and bottom of form */
 }
-
 .subscription-form input[type="text"],
 .subscription-form input[type="email"] {
     background-color: var(--background-color-dark); /* Dark background for input fields */
@@ -129,7 +116,6 @@ nav ul li a:hover, nav ul li a:focus {
     border: 1px solid var(--border-color); /* Border color from variables */
     margin-bottom: 10px; /* Margin below each input */
 }
-
 .subscription-form button {
     background-color: var(--primary-color); /* Primary color for button */
     color: var(--text-color); /* Light text color for button text */
@@ -137,16 +123,13 @@ nav ul li a:hover, nav ul li a:focus {
     cursor: pointer; /* Cursor as pointer to indicate button */
     transition: background-color 0.3s ease; /* Transition for background color change on hover */
 }
-
 .subscription-form button:hover {
     background-color: var(--hover-color); /* Hover color for button */
 }
-
 footer small a {
     color: var(--link-color);
     text-decoration: none;
 }
-
 footer small a:hover {
     color: var(--link-hover-color);
 }
@@ -175,64 +158,52 @@ article {
 html, body {
     overflow-x: hidden;
   }
-
 @media (min-width: 576px) {
     
     .container, .container-fluid {
         padding: 15px; /* Уменьшаем padding для устройств среднего размера */
     }
-
     nav ul {
         flex-direction: row; /* Возвращаем навигацию в горизонтальное положение */
         justify-content: space-between; /* Распределяем элементы навигации */
     }
-
     nav ul li {
         margin-right: 10px; /* Уменьшаем отступ справа для элементов навигации */
     }
-
     .subscription-form input[type="text"],
     .subscription-form input[type="email"] {
         flex-grow: 2; /* Поля ввода занимают больше пространства */
         min-width: 150px; /* Минимальная ширина, чтобы гарантировать видимость */
         margin-right: 10px; /* Отступ справа */
     }
-
     .subscription-form button {
         flex-grow: 1; /* Кнопка занимает меньше места, чем поля ввода */
         min-width: 100px; /* Минимальная ширина кнопки */
         margin-left: 10px; /* Отступ слева */
     }
-
     .subscription-form button {
         white-space: nowrap; /* Предотвращаем перенос текста кнопки на новую строку */
     }
-
     #map {
         height: 300px; /* Устанавливаем промежуточную высоту для карты */
     }
-
     /* Другие стили, специфичные для этого диапазона */
 }
 @media (max-width: 767px) {
     .container, .container-fluid {
         padding: 10px; /* Уменьшаем padding для меньших устройств */
     }
-
     nav ul {
         flex-direction: column; /* Ставим элементы навигации друг под другом */
         width: 100%; /* Растягиваем на всю ширину */
     }
-
     nav ul li, .subscription-form input, .subscription-form button {
         width: 100%; /* Растягиваем на всю ширину */
         margin-bottom: 10px; /* Добавляем отступ снизу */
     }
-
     .subscription-form {
         flex-direction: column; /* Ставим элементы формы друг под другом */
     }
-
     #map {
         height: 200px; /* Уменьшаем высоту карты */
     }
@@ -242,13 +213,11 @@ html, body {
         flex-direction: row; /* Align form elements horizontally on desktop */
         justify-content: space-between; /* Space out form elements evenly */
     }
-
     .subscription-form input[type="text"],
     .subscription-form input[type="email"] {
         margin-bottom: 0; /* Remove bottom margin for inputs on desktop */
         margin-right: 10px; /* Space to the right of inputs */
     }
-
     .subscription-form button {
         margin-left: 10px; /* Space to the left of the button */
     }
