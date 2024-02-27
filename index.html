@@ -113,20 +113,5 @@
 <footer class="container" style="padding: 20px; margin-bottom: 20px; background-color: rgba(0, 0, 0, 0.6);">
     <small><a href="#">Политика конфиденциальности</a> • <a href="#">О нас</a></small>
 </footer>
-<script>
-function initMap() {
-    var riga = {lat: 56.9496, lng: 24.1052};
-    var map = new google.maps.Map(document.getElementById('map'), {
-      zoom: 10,
-      center: riga
-    });
-    var marker = new google.maps.Marker({
-      position: riga,
-      map: map
-    });
-}
-</script>
-<script async="" defer="" src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
-</script>
 </body>
 </html>
